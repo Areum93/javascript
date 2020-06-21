@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="all">
+    <div id="slider-warp">
+    <div class="slider">
+        <ul>
+            <li><a href="#"><img src="images/banner01.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/banner02.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/banner03.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <!-- slider  -->
+    </div>
+    <!-- slider-warp  -->
+</div>
+
+
+<!-- 
+    <div class="text">
+        <p id="all-text">
+        <span id="text01">O</span>
+        <span id="text02">N</span>
+        <span id="text03">스</span>
+        <span id="text04">토</span>
+        <span id="text05">어</span>
+        </p>
+    </div> -->
+    <!-- sample 01 -->
+
+
+
+
+    <script src="js/jquery-3.2.1.min.js">
+    </script>
+    <script type="text/javascript">
+
+setInterval(function(){
+    $('.slider').delay("2500");
+    $('.slider').animate({marginLeft: "-1200px"},500);
+    $('.slider').delay("2500");
+    $('.slider').animate({marginLeft: "-2400px"},500);
+    $('.slider').delay("2500");
+    $('.slider').animate({marginLeft:"0px"},500);
+});
+
+
+
+        // setInterval(
+        //     function(){ 
+        //         alert("Hello"); 
+        //     }, 3000);
+
+        // setInterval 반복적인 수행을 할 때 쓰는 것 
+        // setInterval(function(){
+        //     $('#text01').delay("1000");
+        //     $('#text01').animate({top: "-10px"},500);
+        //     $('#text01').delay("1000");
+        //     $('#text01').animate({top: "0px"},500);
+        //     $('#text02').delay("2000");
+        //     $('#text02').animate({top: "-10px"},500);
+        //     $('#text02').delay("2000");
+        //     $('#text02').animate({top: "0px"},500);
+        //     $('#text03').delay("3000");
+        //     $('#text03').animate({top: "-10px"},500);
+        //     $('#text03').delay("3000");
+        //     $('#text03').animate({top: "0px"},500);
+        //     $('#text04').delay("4000");
+        //     $('#text04').animate({top: "-10px"},500);
+        //     $('#text04').delay("4000");
+        //     $('#text04').animate({top: "0px"},500);
+        //     $('#text05').delay("5000");
+        //     $('#text05').animate({top: "-10px"},500);
+        //     $('#text05').delay("5000");
+        //     $('#text05').animate({top: "0px"},500);
+        // });
+
+    </script>
+</body>
+</html>

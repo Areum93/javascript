@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+</head>
+
+<body>
+
+    <div class="slick">
+        <div class="slick-warp">
+            <div class="banner01">
+                <img src="images/banner01.jpg" alt="">
+            </div>
+            <div class="banner02">
+                <img src="images/banner02.jpg" alt="">
+            </div>
+            <div class="banner03">
+                <img src="images/banner03.jpg" alt="">
+            </div>
+            <div class="banner01">
+                <img src="images/banner01.jpg" alt="">
+            </div>
+            <div class="banner02">
+                <img src="images/banner02.jpg" alt="">
+            </div>
+            <div class="banner03">
+                <img src="images/banner03.jpg" alt="">
+            </div>
+            <div class="banner01">
+                <img src="images/banner01.jpg" alt="">
+            </div>
+            <div class="banner02">
+                <img src="images/banner02.jpg" alt="">
+            </div>
+            <div class="banner03">
+                <img src="images/banner03.jpg" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(function () {
+            $('.slick-warp').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 2
+            });
+        });
+    </script>
+
+</body>
+
+</html>
