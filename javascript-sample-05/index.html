@@ -120,29 +120,45 @@
     <!-- section05  -->
     <div class="section section06">
       <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="images/02_D_01_2.png" alt="">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/02_D_01_2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/02_D_01_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/02_D_01_4.png" alt="">
+                </div>
               </div>
-              <div class="swiper-slide">
-              <img src="images/02_D_01_3.png" alt="">
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-              <div class="swiper-slide">
-                <img src="images/02_D_01_4.png" alt="">
-              </div>
-            </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </div>
     </div>
-    </div>
     <!-- section06  -->
+    <div class="section section07">
+      <h1 class="text-center">
+        세계 최초로 연속 가변 밸브 듀레이션 (CVVD) 기술 적용
+      </h1>
+      <p class="text-center">
+        엔진 밸브의 열고 닫히는 시간을 엔진 상태에 따라 최적으로 제어하는 연속 가변 밸브 듀레이션 (CVVD) 기술을 적용하여 성능과 연비를 크게 향상시켰습니다.
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <img src="images/03_S_02.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section07  -->
   </section>
   <!-- section -->
 
@@ -155,18 +171,16 @@
   <script src="js/bootstrap.min.js"></script>
   <!-- main js  -->
   <script type="text/javascript">
+    // swiper
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 
 
-  // swiper
-  var swiper = new Swiper('.swiper-container', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-
-  // background img
+    // background img
     var images = ["bg-img01.jpg", "bg-img02.jpg", "bg-img03.jpg"];
     $(function() {
       var i = 0;
