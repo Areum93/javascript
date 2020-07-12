@@ -2,13 +2,13 @@
 function calendar(new_year, new_month){
   // 특정 年月을 시작일부터 조회(year, month, date)
   var	d = new Date(new_year, new_month-1, 1),
+      // 0 ~ 11
       // 월별 일수 구하기
       d_length = 32 - new Date(new_year, new_month-1, 32).getDate(),
       year = d.getFullYear(),
       month = d.getMonth(),
       date = d.getDate(),
       day = d.getDay();
-
   // caption 영역 날짜 표시 객체
   var caption_year = document.querySelector('.year'),
       caption_month = document.querySelector('.month');

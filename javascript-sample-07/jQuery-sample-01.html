@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accrdion</title>
+    <link rel="stylesheet" href="css/accordion-js.css">
+</head>
+<body>
+    <dl>
+        <dt class="ab"><span></span>전화상담은 언제부터 가능한가요?</dt>
+        <dd class="cd">나도 몰라...</dd>
+        <dt><span></span>내 구매내역은 어디서 확인할까요?</dt>
+        <dd>나도 몰라...</dd>
+    </dl>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script>
+        $(function(){
+            $(".ab").click(function(){
+                $('.cd').slideToggle();
+            });
+        })
+    </script>
+</body>
+</html>
